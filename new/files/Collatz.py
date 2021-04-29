@@ -10,10 +10,13 @@ def collatz(number) -> object:
         return print(3 * number + 1)
 
 while True:
-    user_number = int(input('enter a number: '))
-    if user_number != 1:
-        collatz(user_number)
-        continue
-    else:
-        print('good bye!')
-        sys.exit()
+    try:
+        user_number = int(input('enter a number: '))
+        if user_number != 1:
+            collatz(user_number)
+            continue
+        else:
+            print('good bye!')
+            sys.exit()
+    except ValueError:
+        print('only integer!!!')
