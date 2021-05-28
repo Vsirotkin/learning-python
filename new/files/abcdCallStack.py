@@ -23,4 +23,5 @@ def d():
     print('d() starts')
     print('d() returns')
 
+
 a()
