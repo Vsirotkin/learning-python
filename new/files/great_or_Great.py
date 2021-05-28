@@ -4,7 +4,7 @@ while True:
     print('How are you?')
     feeling = input()
 
-    if feeling.lower() == 'g':
-        print('I feel great')
+    if feeling.lower() == 'great':
+        print('I feel great too.')
     else:
-        print('I feel Great too')
+        print('I hope the rest of the day is OK for you.')
